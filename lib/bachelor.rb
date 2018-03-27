@@ -59,6 +59,6 @@ empty_array = []
       end
     end
 binding.pry
-string_ages = empty_array.join
+string_ages = empty_array.join(", ")
 
 end
