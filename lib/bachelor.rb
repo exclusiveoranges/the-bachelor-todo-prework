@@ -55,7 +55,10 @@ empty_array = []
       hash.each do |key, value|
         if key == "age"
           empty_array<<value
-
+        end
+      end
+    end
+  end
 
 
 end
