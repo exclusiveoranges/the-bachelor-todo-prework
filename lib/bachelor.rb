@@ -14,6 +14,7 @@ end
 def get_contestant_name(data, occupation)
   data.keys.each do |season|
     if data[season]["occupation"] == occupation
+      binding.pry
       return data[season]["name"]
     end
   end
