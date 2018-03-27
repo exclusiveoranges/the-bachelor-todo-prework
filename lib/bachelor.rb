@@ -60,6 +60,6 @@ final_array = []
       end
     end
 empty_array.collect do |string|
-  string.to_i<<final_array
+  final_array<<string.to_i
 
 end
