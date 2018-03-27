@@ -9,6 +9,7 @@ def get_first_name_of_season_winner(data, season)
         hash["name"]
       end
     end
+winner_name
   end
 end
 
