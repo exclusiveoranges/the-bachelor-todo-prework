@@ -63,5 +63,6 @@ final_array = []
       final_array<<string.to_i
     end
 average_age = final_array.inject(0){|sum,x| sum + x } / final_array.length
+binding.pry
 average_age.round
 end
