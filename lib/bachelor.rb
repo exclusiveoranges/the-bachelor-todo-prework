@@ -6,9 +6,6 @@ def get_first_name_of_season_winner(data, season)
   hash.each do |key, value|
     if value = "Winner"
       key
-
-  [0]["status"]
-
 end
 
 def get_contestant_name(data, occupation)
