@@ -5,7 +5,7 @@ def get_first_name_of_season_winner(data, season)
   contestant_array.collect do |hash|
 
     hash.collect do |key, value|
-      if value = "Winner"
+      if value == "Winner"
         new_array<<hash["name"]
       end
     end
