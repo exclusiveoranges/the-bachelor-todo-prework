@@ -51,6 +51,7 @@ end
 
 def get_average_age_for_season(data, season)
 empty_array = []
+final_array = []
     data[season].each do |hash|
       hash.each do |key, value|
         if key == "age"
@@ -58,7 +59,7 @@ empty_array = []
         end
       end
     end
-binding.pry
-string_ages = empty_array.join(", ")
+empty_array.collect do |string|
+  string.to_i
 
 end
