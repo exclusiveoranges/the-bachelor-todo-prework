@@ -6,12 +6,11 @@ def get_first_name_of_season_winner(data, season)
 
     hash.each do |key, value|
       if value = "Winner"
-        binding.pry
         winner_name = hash["name"]
       end
     end
-  end
 winner_name
+  end
 end
 
 def get_contestant_name(data, occupation)
