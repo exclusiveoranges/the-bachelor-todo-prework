@@ -3,10 +3,10 @@ require 'pry'
 def get_first_name_of_season_winner(data, season)
   new_array = []
   contestant_array = data[season]
-  contestant_array.collect do |hash|
-    hash.collect do |key, value|
+  contestant_array.each do |hash|
+    hash.each do |key, value|
       if value == "Winner"
-        season_winner = hash["name"]
+        new_array<<hash["name"]
       end
     end
   end
