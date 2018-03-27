@@ -6,8 +6,7 @@ def get_first_name_of_season_winner(data, season)
   contestant_array.each do |hash|
     hash.each do |key, value|
       if value == "Winner"
-        binding.pry
-        hash["name"]
+      return hash["name"].split.first
       end
     end
   end
