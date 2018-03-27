@@ -8,8 +8,8 @@ def get_first_name_of_season_winner(data, season)
       if value = "Winner"
         winner_name = hash["name"]
       end
-    end
 winner_name
+    end
   end
 end
 
