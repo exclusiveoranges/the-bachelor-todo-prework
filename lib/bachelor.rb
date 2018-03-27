@@ -1,4 +1,5 @@
 require 'pry'
+
 def get_first_name_of_season_winner(data, season)
   new_array = []
   contestant_array = data[season]
