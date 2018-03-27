@@ -62,7 +62,8 @@ final_array = []
     empty_array.each do |string|
       final_array<<string.to_i
     end
-final_array.inject(0){|sum,x| sum + x } / final_array.length
+average_age = final_array.inject(0){|sum,x| sum + x } / final_array.length
+average_age.to_i
 
 
 
