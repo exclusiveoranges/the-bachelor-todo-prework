@@ -6,7 +6,7 @@ def get_first_name_of_season_winner(data, season)
     binding.pry
     hash.each do |key, value|
       if value = "Winner"
-      key
+      return key
       end
     end
   end
