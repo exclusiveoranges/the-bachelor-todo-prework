@@ -62,7 +62,7 @@ final_array = []
     empty_array.each do |string|
       final_array<<string.to_i
     end
-binding.pry
+final_array.inject(0){|sum,x| sum + x } / final_array.length
 
 
 
