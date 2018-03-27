@@ -64,7 +64,4 @@ final_array = []
     end
 average_age = final_array.inject(0){|sum,x| sum + x } / final_array.length
 average_age.to_i
-
-
-
 end
