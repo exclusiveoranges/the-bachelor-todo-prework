@@ -30,6 +30,10 @@ def count_contestants_by_hometown(data, hometown)
       hash.each do |key, value|
         if value == hometown
           counter += 0
+        end
+      end
+    end
+  end
 end
 
 def get_occupation(data, hometown)
