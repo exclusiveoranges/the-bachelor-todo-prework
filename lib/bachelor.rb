@@ -61,8 +61,8 @@ final_array = []
     end
     empty_array.each do |string|
       final_array<<string.to_i
-      binding.pry
     end
+binding.pry
 
 
 
