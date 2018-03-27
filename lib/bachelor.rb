@@ -1,19 +1,67 @@
+require 'pry'
+
 def get_first_name_of_season_winner(data, season)
-  # code here
+  contestant_array = data[season]
+  contestant_array.each do |hash|
+    hash.each do |key, value|
+      if value == "Winner"
+      return hash["name"].split.first
+      end
+    end
+  end
 end
 
 def get_contestant_name(data, occupation)
-  # code here
+  data.keys.each do |season|
+    data[season].each do |hash|
+      hash.each do |key, value|
+        if value == occupation
+          return hash["name"]
+        end
+      end
+    end
+  end
 end
 
 def count_contestants_by_hometown(data, hometown)
-  # code here
+  counter = 0
+  data.keys.each do |season|
+    data[season].each do |hash|
+      hash.each do |key, value|
+        if value == hometown
+          counter += 1
+        end
+      end
+    end
+  end
+counter
 end
 
 def get_occupation(data, hometown)
-  # code here
+  data.keys.each do |season|
+    data[season].each do |hash|
+      hash.each do |key, value|
+        if value == hometown
+          return hash["occupation"]
+        end
+      end
+    end
+  end
 end
 
 def get_average_age_for_season(data, season)
-  # code here
+empty_array = []
+final_array = []
+    data[season].each do |hash|
+      hash.each do |key, value|
+        if key == "age"
+          empty_array<<value
+        end
+      end
+    end
+    empty_array.each do |string|
+      final_array<<string.to_i
+    end
+average_age = final_array.inject(0){|sum,x| sum + x }.to_f / final_array.length
+average_age.round
 end
