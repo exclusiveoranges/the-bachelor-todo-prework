@@ -1,7 +1,6 @@
 require 'pry'
 
 def get_first_name_of_season_winner(data, season)
-  new_array = []
   contestant_array = data[season]
   contestant_array.each do |hash|
     hash.each do |key, value|
@@ -13,7 +12,7 @@ def get_first_name_of_season_winner(data, season)
 end
 
 def get_contestant_name(data, occupation)
-  # code here
+  # code
 end
 
 def count_contestants_by_hometown(data, hometown)
