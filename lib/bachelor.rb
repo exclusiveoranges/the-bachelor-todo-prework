@@ -59,7 +59,11 @@ final_array = []
         end
       end
     end
-empty_array.each do |string|
-  final_array<<string.to_i
+    empty_array.each do |string|
+      final_array<<string.to_i
+      binding.pry
+    end
+
+
 
 end
