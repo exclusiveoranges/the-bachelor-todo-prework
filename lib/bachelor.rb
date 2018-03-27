@@ -59,7 +59,7 @@ final_array = []
         end
       end
     end
-empty_array.collect do |string|
+empty_array.each do |string|
   final_array<<string.to_i
 
 end
